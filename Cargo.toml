@@ -1,0 +1,45 @@
+[package]
+name = "binance-connector"
+version = "0.1.0"
+edition = "2021"
+authors = ["Guilherme F. G. Santos <guifernandosantos@gmail.com>"]
+description = "High-performance Rust client for Binance cryptocurrency exchange API"
+license = "MIT"
+
+[dependencies]
+# HTTP client
+reqwest = { version = "0.12.24", features = ["json"] }
+
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = "0.28.0"                   # WebSocket support
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Date/time
+chrono = { version = "0.4", features = ["serde"] }
+
+# Error handling
+thiserror = "2.0.17"
+
+# Async utilities
+async-trait = "0.1"
+futures = "0.3"
+futures-util = "0.3"
+
+# WebSocket
+tungstenite = "0.28.0"
+
+# URL encoding
+url = "2.5"
+
+[dev-dependencies]
+tokio-test = "0.4"
+mockito = "1.2"
+criterion = { version = "0.7.0", features = ["async_tokio"] }
+
+[[bench]]
+name = "fetch_benchmark"
+harness = false
