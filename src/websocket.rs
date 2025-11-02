@@ -553,7 +553,7 @@ impl BinanceWebSocket {
                     while let Some(msg) = ws_stream.next().await {
                         match msg {
                             Ok(Message::Text(text)) => {
-                                if tx.send(Ok(text)).await.is_err() {
+                                if tx.send(Ok(text.to_string())).await.is_err() {
                                     return Ok(());
                                 }
                             }
