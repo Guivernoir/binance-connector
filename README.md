@@ -477,7 +477,7 @@ binance-connector/
 - Get exchange information
 - Server time & health check
 
-🚧 **Coming Soon** (Phase 2):
+🚧 **Coming Soon** (Phase 3):
 
 - WebSocket streaming (real-time prices)
 - Account information (requires auth)
@@ -591,7 +591,7 @@ Cryptocurrency markets are highly volatile. Never invest more than you can affor
 
 ## Changelog
 
-### v0.1.0 (2025-01-15)
+### v0.2.0 (2025-11-04)
 
 - Initial release
 - REST API support for market data
@@ -599,15 +599,6 @@ Cryptocurrency markets are highly volatile. Never invest more than you can affor
 - Comprehensive test coverage
 - Production-ready error handling
 - No authentication required
-
-### Roadmap
-
-**v0.2.0** (Future):
-
-- WebSocket streaming support
-- Real-time price updates
-- Live trade stream
-- Kline/candlestick stream
 
 **v0.3.0** (Future):
 

@@ -1,6 +1,6 @@
 [package]
 name = "binance-connector"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 authors = ["Guilherme F. G. Santos <guifernandosantos@gmail.com>"]
 description = "High-performance Rust client for Binance cryptocurrency exchange API"
@@ -34,6 +34,7 @@ tungstenite = "0.28.0"
 
 # URL encoding
 url = "2.5"
+governor = "0.10.1"
 
 [dev-dependencies]
 tokio-test = "0.4"
